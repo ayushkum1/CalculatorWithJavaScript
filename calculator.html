@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+    <style>
+        .buttonsize{
+            height: 30px;
+            width: 30px;
+            margin: 5px;
+        }
+
+        .textview{
+            width: 160px;
+            height: 30px;
+            margin: 5px;
+        }
+
+        .clearButton{
+            width: 160px;
+            height: 30px;
+            margin: 5px;
+        }
+    </style>
+
+    <body>
+        <div>
+            <p>
+              <b>
+                  Welcome to Basic Calculator
+              </b>  
+            </p>
+            <p>
+                This Calculator will perform basic functions like add,subtract,divide and multiply
+            </p>
+        </div>
+
+        <!-- blank line -->
+        <p></p> 
+
+        <!-- division for calculator body -->
+        <div>
+
+            <p>
+                <input type="text" id="equationinput" name="equation" class="textview">
+            </p>
+            
+            <p>
+                <button type="button" id="1" class="buttonsize">1</button>
+                <button type="button" id="2" class="buttonsize">2</button>
+                <button type="button" id="3" class="buttonsize">3</button>
+                <button type="button" id="plus" class="buttonsize">+</button>
+            </p>
+
+            <p>
+                <button type="button" id="4" class="buttonsize">4</button>
+                <button type="button" id="5" class="buttonsize">5</button>
+                <button type="button" id="6" class="buttonsize">6</button>
+                <button type="button" id="minus" class="buttonsize">-</button>
+            </p>
+            
+            <p>
+                <button  type="button" id="7" class="buttonsize">7</button>
+                <button  type="button" id="8" class="buttonsize">8</button>
+                <button  type="button" id="9" class="buttonsize">9</button>
+                <button  type="button" id="mult" class="buttonsize">*</button>
+            </p>
+            
+            <p>
+                <button type="button" id="dot" class="buttonsize">.</button>
+                <button type="button" id="0" class="buttonsize">0</button>
+                <button type="button" id="equal" class="buttonsize">=</button>
+                <button type="button" id="divi" class="buttonsize">/</button>
+            </p>
+
+            <p>
+                <button type="button" id="clear" class="clearButton">CLEAR</button>
+            </p>
+            
+        </div>
+
+        <script type="text/javascript" src="calculatorfunctions.js"></script>
+
+    </body>
+</html>
