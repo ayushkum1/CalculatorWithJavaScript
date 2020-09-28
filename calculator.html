@@ -1,83 +1,100 @@
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<style>
 
-    <style>
-        .buttonsize{
-            height: 30px;
-            width: 30px;
-            margin: 5px;
-        }
+    body{
+        margin: 4rem 0;
+    }
+    .buttonsize {
+        height: 3em;
+        width: 3em;
+        margin: 0.5em;
+    }
 
-        .textview{
-            width: 160px;
-            height: 30px;
-            margin: 5px;
-        }
+    .textview {
+        width: 160px;
+        height: 30px;
+        margin: 5px;
+    }
 
-        .clearButton{
-            width: 160px;
-            height: 30px;
-            margin: 5px;
-        }
-    </style>
+     
+</style>
 
-    <body>
+<body>
+    <div  class="container">
+        <p>
+            <b>
+                Welcome to Basic Calculator
+            </b>
+        </p>
+        <p>
+            This Calculator will perform basic functions like <code>add</code>, <code>substract</code>, <code>divide</code> and <code>multiply</code>.
+        </p>
+    </div>
+
+    <!-- blank line -->
+    <p></p>
+
+    <!-- division for calculator body -->
+    <div  class="container">
+
         <div>
-            <p>
-              <b>
-                  Welcome to Basic Calculator
-              </b>  
-            </p>
-            <p>
-                This Calculator will perform basic functions like add,subtract,divide and multiply
-            </p>
+            <div class="input-group">
+                <input type="text" id="equationinput" class="form-control" placeholder=" " aria-label="" aria-describedby="button-addon4">
+                <div class="input-group-append" id="button-addon4">
+                  <button class="btn btn-outline-secondary" type="button" disabled>Prev</button>
+                  <button class="btn btn-outline-secondary" id="history" type="button" disabled>Next</button>
+                </div>
+              </div> 
+        </div>
+        <div>
+            <div>
+                <table>
+                    <tr>
+                        <td><button type="button" id="1" class="btn btn-light buttonsize">1</button></td>
+                        <td><button type="button" id="2" class="btn btn-light buttonsize">2</button></td>
+                        <td><button type="button" id="3" class="btn btn-light buttonsize">3</button></td>
+                        <td><button type="button" id="plus" class="btn btn-dark buttonsize">+</button></td>
+                        <td><button type="button" id="clear" class="btn btn-danger buttonsize">C</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" id="4" class="btn btn-light buttonsize">4</button></td>
+                        <td> <button type="button" id="5" class="btn btn-light buttonsize">5</button></td>
+                        <td> <button type="button" id="6" class="btn btn-light buttonsize">6</button></td>
+                        <td><button type="button" id="minus" class="btn btn-dark buttonsize">-</button></td> 
+                    </tr>
+                    <tr>
+                        <td><button type="button" id="7" class="btn btn-light buttonsize">7</button></td>
+                        <td><button type="button" id="8" class="btn btn-light buttonsize">8</button></td>
+                        <td> <button type="button" id="9" class="btn btn-light buttonsize">9</button></td>
+                        <td><button type="button" id="mult" class="btn btn-dark buttonsize">*</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" id="dot" class="btn btn-light buttonsize">.</button></td>
+                        <td> <button type="button" id="0" class="btn btn-light buttonsize">0</button></td>
+                        <td><button type="button" id="equal" class="btn btn-light buttonsize">=</button></td>
+                        <td><button type="button" id="divi" class="btn btn-dark buttonsize">/</button></td>
+                    </tr>
+        
+                </table> 
+            </div>
         </div>
 
-        <!-- blank line -->
-        <p></p> 
+    </div>
 
-        <!-- division for calculator body -->
-        <div>
 
-            <p>
-                <input type="text" id="equationinput" name="equation" class="textview">
-            </p>
-            
-            <p>
-                <button type="button" id="1" class="buttonsize">1</button>
-                <button type="button" id="2" class="buttonsize">2</button>
-                <button type="button" id="3" class="buttonsize">3</button>
-                <button type="button" id="plus" class="buttonsize">+</button>
-                <button type="button" id="history" class="buttonsize">History</button>
-            </p>
+</body>
+<script type="text/javascript" src="calculatorfunctions.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+</script>
 
-            <p>
-                <button type="button" id="4" class="buttonsize">4</button>
-                <button type="button" id="5" class="buttonsize">5</button>
-                <button type="button" id="6" class="buttonsize">6</button>
-                <button type="button" id="minus" class="buttonsize">-</button>
-            </p>
-            
-            <p>
-                <button  type="button" id="7" class="buttonsize">7</button>
-                <button  type="button" id="8" class="buttonsize">8</button>
-                <button  type="button" id="9" class="buttonsize">9</button>
-                <button  type="button" id="mult" class="buttonsize">*</button>
-            </p>
-            
-            <p>
-                <button type="button" id="dot" class="buttonsize">.</button>
-                <button type="button" id="0" class="buttonsize">0</button>
-                <button type="button" id="equal" class="buttonsize">=</button>
-                <button type="button" id="divi" class="buttonsize">/</button>
-            </p>
-
-            <p>
-                <button type="button" id="clear" class="clearButton">CLEAR</button>
-            </p>
-            
-        </div>
-
-        <script type="text/javascript" src="calculatorfunctions.js"></script>
-    </body>
 </html>
